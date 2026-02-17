@@ -6,6 +6,51 @@
     <title>Document</title>
 </head>
 <body>
+    <header>
+        <H1> Pesquisa online</H1>
+    </header>
+<!-- section dos formulários -->
+
+    <section>
+                     <fieldset></fieldset>
+
+        <form action="" method="get">
+
+         
+             <fieldset>
+                <!-- Dados Pessoais -->
+                <legend>Dados Pessoais</legend>
+
+                <label for="UserName">Nome</label>
+                <input type="text" name="UserName" required>
+                <br>
+
+                <label for="Age">Idade</label>
+                <input type="number" name="Age" min="12" max="100" required>
+                <br>
+
+                <label for="BirthDate">Data de nascimento</label>
+                <input type="date" name="BirthDate" required>
+                <br>
+
+                <label for="UserEmail">E-mail</label>
+                <input type="email" name="UserEmail" required>
+                <br>
+
+                <label for="UserPhoneNumber">Número de telefone</label>
+                <input type="tel" name="UserPhoneNumber" required placeholder="DDD + numero sem espaços" pattern="[0-9]{11}">
+                <br>
+
+                <label for="UserImage">Upload de foto</label>
+                <input type="file" name="UserImage" accept="image/*">
+                <br>
+             </fieldset>
+
+
+            <button type="submit">Enviar</button>
+            
+        </form>
+    </section>
     
 </body>
 </html>
