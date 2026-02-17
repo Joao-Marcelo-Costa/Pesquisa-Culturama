@@ -16,9 +16,9 @@
         <form action="" method="get">
 
          
-             <fieldset>
+             <!-- <fieldset> -->
                 <!-- Dados Pessoais -->
-                <legend>Dados Pessoais</legend>
+                <!-- <legend>Dados Pessoais</legend>
 
                 <label for="UserName">Nome</label>
                 <input type="text" name="UserName" required>
@@ -42,9 +42,23 @@
 
                 <label for="UserImage">Upload de foto</label>
                 <input type="file" name="UserImage" accept="image/*">
-                <br>
-             </fieldset>
+                <br> -->
+             <!-- </fieldset> -->
 
+            <fieldset>
+                <legend>Perfil</legend>
+                <p>Gênero</p>
+
+                <input type="radio" name="UserGender" value="Female">
+                <label for="UserGender" >Feminino</label>
+
+                <input type="radio" name="UserGender" value="Male">
+                <label for="UserGender" >Masculino</label>
+
+                <input type="radio" name="UserGender" value="PreferNotToDeclare">
+                <label for="UserGender" >Prefiro não declarar</label>
+
+            </fieldset>
 
             <button type="submit">Enviar</button>
             
