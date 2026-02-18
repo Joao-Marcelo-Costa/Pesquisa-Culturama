@@ -11,162 +11,174 @@
     </header>
     section dos formulários
 
-    <section>
+    <section><!--search section-->
 
         <form action="" method="get">
 
          
-            <fieldset>
+            <fieldset> <!--Personal Data Section-->
 
                  <legend>Dados Pessoais</legend>
-
-                <label for="Name">Nome</label>
-                <input id="Name" name="UserName" required>
-                <br>
-
-                <label for="Age">Idade</label>
-                <input id="Age" name="UserAge" min="12" max="100" required>
-                <br>
-
-                <label for="Date">Data de nascimento</label>
-                <input id="Date" name="BirthDate" required>
-                <br>
-
-                <label for="Email">E-mail</label>
-                <input id="Email" name="UserEmail" required>
-                <br>
-
-                <label for="Phone">Número de telefone</label>
-                <input id="Phone" name="UserPhoneNumber" required placeholder="DDD + numero sem espaços" pattern="[0-9]{11}">
-                <br>
-
-                <label for="Image">Upload de foto</label>
-                <input id="Image" name="UserImage" accept="image/*">
-                <br> 
+                <!--name selection-->
+                    <label for="Name">Nome</label>
+                    <input id="Name" name="UserName" required>
+                    <br>
+                <!--age selection-->
+                    <label for="Age">Idade</label>
+                    <input id="Age" name="UserAge" min="12" max="100" required>
+                    <br>
+                <!--BirthDate selection-->
+                    <label for="Date">Data de nascimento</label>
+                    <input id="Date" name="BirthDate" required>
+                    <br>
+                <!--Email selection-->
+                    <label for="Email">E-mail</label>
+                    <input id="Email" name="UserEmail" required>
+                    <br>
+                <!--Phone number selection-->
+                    <label for="Phone">Número de telefone</label>
+                    <input id="Phone" name="UserPhoneNumber" required placeholder="DDD + numero sem espaços" pattern="[0-9]{11}">
+                    <br>
+                <!--Image upload selection-->
+                    <label for="Image">Upload de foto</label>
+                    <input id="Image" name="UserImage" accept="image/*">
+                    <br> 
              </fieldset>
 
-            <!-- section do Perfil -->
-            <fieldset>
+            
+            <fieldset> <!--Perfil Section-->
                 <legend>Perfil</legend>
-                <p>Gênero</p>
 
-                <input id="Female" type="radio" name="UserGender" value="Female">
-                <label for="Female" >Feminino</label>
+                <!--Gender selection-->
+                    <p>Gênero</p>
 
-                <input id="Male" type="radio" name="UserGender" value="Male">
-                <label for="Male" >Masculino</label>
+                    <input id="Female" type="radio" name="UserGender" value="Female">
+                    <label for="Female" >Feminino</label>
 
-                <input id="NotInformed" type="radio" name="UserGender" value="PreferNotToDeclare">
-                <label for="NotInformed" >Prefiro não declarar</label>
+                    <input id="Male" type="radio" name="UserGender" value="Male">
+                    <label for="Male" >Masculino</label>
 
-                <br>
-                <label for="Marital">Estado civil</label> <!--isso aqui tudo conta como um input só -->
+                    <input id="NotInformed" type="radio" name="UserGender" value="PreferNotToDeclare">
+                    <label for="NotInformed" >Prefiro não declarar</label>
+                    <br>
                 
-                <select name="MaritalStatus" id="Marital">
-                    <option id="Marital" value="NotInformed">Selecione...</option>
-                    <option id="Marital" value="Marry">Casado</option>
-                    <option id="Marital" value="Single">Solteiro</option>
-                    <option id="Marital" value="Divorced">Divorciado</option>
-                    <option id="Marital" value="Widower">Viuvo</option>
-                    <option id="Marital" value="StableUnion">União estavel</option>
-                </select>
-
-                <br>
-
-                <label for="State" >Estado</label>
-                    <select name="UserState" id="State" required>
-
-                        <option id="State" value="StateNotSelected">Selecione...</option>
-                        <option id="State" value="Acre">Acre</option>
-                        <option id="State" value="Alagoas">Alagoas</option>
-                        <option id="State" value="Amapa">Amapá</option>
-                        <option id="State" value="Amazonas">Amazonas</option>
-                        <option id="State" value="Bahia">Bahia</option>
-                        <option id="State" value="Ceara">Ceará</option>
-                        <option id="State" value="DistritoFederal">Distrito Federal</option>
-                        <option id="State" value="EspiritoSanto">Espírito Santo</option>
-                        <option id="State" value="Goias">Goiás</option>
-                        <option id="State" value="Maranhao">Maranhão</option>
-                        <option id="State" value="MatoGrosso">Mato Grosso</option>
-                        <option id="State" value="MatoGrossoDoSul">Mato Grosso do Sul</option>
-                        <option id="State" value="MinasGerais">Minas Gerais</option>
-                        <option id="State" value="Para">Pará</option>
-                        <option id="State" value="Paraiba">Paraíba</option>
-                        <option id="State" value="Parana">Paraná</option>
-                        <option id="State" value="Pernambuco">Pernambuco</option>
-                        <option id="State" value="Piaui">Piauí</option>
-                        <option id="State" value="RioDeJaneiro">Rio de Janeiro</option>
-                        <option id="State" value="RioGrandeDoNorte">Rio Grande do Norte</option>
-                        <option id="State" value="RioGrandeDoSul">Rio Grande do Sul</option>
-                        <option id="State" value="Rondonia">Rondônia</option>
-                        <option id="State" value="Roraima">Roraima</option>
-                        <option id="State" value="SantaCatarina">Santa Catarina</option>
-                        <option id="State" value="SaoPaulo">São Paulo</option>
-                        <option id="State" value="Sergipe">Sergipe</option>
-                        <option id="State" value="Tocantins">Tocantins</option>
+                <!--Civil State selection-->
+                    <label for="Marital">Estado civil</label>
+                    <select name="MaritalStatus" id="Marital">
+                        <option id="Marital" value="NotInformed">Selecione...</option>
+                        <option id="Marital" value="Marry">Casado</option>
+                        <option id="Marital" value="Single">Solteiro</option>
+                        <option id="Marital" value="Divorced">Divorciado</option>
+                        <option id="Marital" value="Widower">Viuvo</option>
+                        <option id="Marital" value="StableUnion">União estavel</option>
                     </select>
+                    <br>
+                
+                <!--State selection-->
+                    <label for="State" >Estado</label>
+                        <select name="UserState" id="State" required>
 
-                <br>
-                <label for="City">Cidade</label>
-                <input id="City" name="UserCity" required placeholder="Cidade">
+                            <option id="State" value="StateNotSelected">Selecione...</option>
+                            <option id="State" value="Acre">Acre</option>
+                            <option id="State" value="Alagoas">Alagoas</option>
+                            <option id="State" value="Amapa">Amapá</option>
+                            <option id="State" value="Amazonas">Amazonas</option>
+                            <option id="State" value="Bahia">Bahia</option>
+                            <option id="State" value="Ceara">Ceará</option>
+                            <option id="State" value="DistritoFederal">Distrito Federal</option>
+                            <option id="State" value="EspiritoSanto">Espírito Santo</option>
+                            <option id="State" value="Goias">Goiás</option>
+                            <option id="State" value="Maranhao">Maranhão</option>
+                            <option id="State" value="MatoGrosso">Mato Grosso</option>
+                            <option id="State" value="MatoGrossoDoSul">Mato Grosso do Sul</option>
+                            <option id="State" value="MinasGerais">Minas Gerais</option>
+                            <option id="State" value="Para">Pará</option>
+                            <option id="State" value="Paraiba">Paraíba</option>
+                            <option id="State" value="Parana">Paraná</option>
+                            <option id="State" value="Pernambuco">Pernambuco</option>
+                            <option id="State" value="Piaui">Piauí</option>
+                            <option id="State" value="RioDeJaneiro">Rio de Janeiro</option>
+                            <option id="State" value="RioGrandeDoNorte">Rio Grande do Norte</option>
+                            <option id="State" value="RioGrandeDoSul">Rio Grande do Sul</option>
+                            <option id="State" value="Rondonia">Rondônia</option>
+                            <option id="State" value="Roraima">Roraima</option>
+                            <option id="State" value="SantaCatarina">Santa Catarina</option>
+                            <option id="State" value="SaoPaulo">São Paulo</option>
+                            <option id="State" value="Sergipe">Sergipe</option>
+                            <option id="State" value="Tocantins">Tocantins</option>
+                        </select>
+                        <br>
+
+                <!--City text selection-->
+                    <label for="City">Cidade</label>
+                    <input id="City" name="UserCity" required placeholder="Cidade">
 
             </fieldset>
 
-            <fieldset>
+            <fieldset><!--Habits Section-->
                 <legend>Hábitos</legend>
-                    <p>Redes sociais</p> 
-                <input id="instagram" type="checkbox" name="social" value="instagram"><!--basicamente cada caixinha dessas funciona como uma unica pergunta separada, não como várias caixinhas-->
-                <label for="instagram">Instagram</label>
-                <br>
-                <input id="Facebook" type="checkbox" name="social" value="Facebook">
-                <label for="Facebook">Facebook</label>
-                <br>
-                <input id="Facebook" type="checkbox" name="social" value="Yotube">
-                <label id=""for="social">Yotube</label>
-                <br>
-                <input type="checkbox" name="social" value="GitHub">
-                <label for="social" >GitHub</label>
-                <br>
 
-                <label for="MusicStyle">Estilo Musical</label>
-                <input name="Music" id="MusicStyle" list = "styletypes"></input>
+                    <!--social network selection-->
+                        <p>Redes sociais</p> 
+                        <input id="instagram" type="checkbox" name="social" value="instagram">
+                        <label for="instagram">Instagram</label>
+                        <br>
+                        <input id="Facebook" type="checkbox" name="social" value="Facebook">
+                        <label for="Facebook">Facebook</label>
+                        <br>
+                        <input id="Facebook" type="checkbox" name="social" value="Yotube">
+                        <label id=""for="social">Yotube</label>
+                        <br>
+                        <input type="checkbox" name="social" value="GitHub">
+                        <label for="social" >GitHub</label>
+                        <br>
 
-                <datalist id="styletypes">
-                    <option value="Rock"></option>
-                    <option value="Pop"></option>
-                    <option value="Samba"></option>
-                    <option value="Sertanejo"></option>
-                    <option value="Rap"></option>
+                    <!--Musical Style selection-->
+                        <label for="MusicStyle">Estilo Musical</label>
+                        <input name="Music" id="MusicStyle" list = "styletypes"></input>
+
+                        <datalist id="styletypes">
+                            <option value="Rock"></option>
+                            <option value="Pop"></option>
+                            <option value="Samba"></option>
+                            <option value="Sertanejo"></option>
+                            <option value="Rap"></option>
 
 
-                </datalist>
-                <br>
-                <label for="FavoriteColor">Cor Favorita</label>
-                <input type="color" id="FavoriteColor" name="UserFavoriteColor">
+                        </datalist>
+                        <br>
+
+                    <!--Favorite color selection-->
+                        <label for="FavoriteColor">Cor Favorita</label>
+                        <input type="color" id="FavoriteColor" name="UserFavoriteColor">
 
             </fieldset>
 
-            <fieldset>
+            <fieldset> <!--User opinion section-->
                 <legend>Avaliação</legend>
 
-                <input type="radio" id="Exepcional" name="UserOpinion" value="Exepcional">
-                <label for="Exepcional">Exepcional</label>
+                    <!--Evaluation selection-->
+                        <input type="radio" id="Exepcional" name="UserOpinion" value="Exepcional">
+                        <label for="Exepcional">Exepcional</label>
 
-                <input type="radio" id="Great" name="UserOpinion" value="Great">
-                <label for="Great">Ótimo</label>
+                        <input type="radio" id="Great" name="UserOpinion" value="Great">
+                        <label for="Great">Ótimo</label>
 
-                <input type="radio" id="Regular" name="UserOpinion" value="Regular">
-                <label for="Regular">Normal</label>
+                        <input type="radio" id="Regular" name="UserOpinion" value="Regular">
+                        <label for="Regular">Normal</label>
 
-                <input type="radio" id="Bad" name="UserOpinion" value="Bad">
-                <label for="Bad">Ruim</label>
+                        <input type="radio" id="Bad" name="UserOpinion" value="Bad">
+                        <label for="Bad">Ruim</label>
 
-                <input type="radio" id="Terrible" name="UserOpinion" value="Terrible">
-                <label for="Terrible">Terrivel</label>
-                
-                <br><br>
-                <textarea name="Opinion" id="UserEvaluation" placeholder="Descreva para nós oque achou com mais detalhes"></textarea>
+                        <input type="radio" id="Terrible" name="UserOpinion" value="Terrible">
+                        <label for="Terrible">Terrivel</label>
+
+                    <!--Text evaluation-->
+                        <br><br>
+                        <textarea name="Opinion" id="UserEvaluation" placeholder="Descreva para nós oque achou com mais detalhes"></textarea>
             </fieldset>
+
+
             
             <button type="submit">Enviar</button>
             
