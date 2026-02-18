@@ -1,0 +1,49 @@
+*{
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+}
+/* defining fonts */
+.fjalla-one-regular {
+  font-family: "Fjalla One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.work-sans {
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: oblique;
+}
+
+main{ /*the main tag is useful so we don't use the body tag, who uses our whole page*/
+    font-family:"Work Sans", sans-serif;
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto; /*does so everything inside the main tag (almost all code) gets certerd*/
+}
+header{
+    font-family: "Fjalla One", sans-serif,Arial;
+    text-align: center;
+    margin-bottom: 20px;
+}
+img{
+    width: 100px;
+}
+form{
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 30px;
+}
+fieldset{
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+}   
+
+legend{
+    font-weight: 800;
+    font-size: 18px;
+    padding: 0 5px;
+}
