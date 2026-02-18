@@ -22,3 +22,7 @@ legend{
 p,label,input{
     font-family:"Work Sans", sans-serif;
 }
+
+p{
+    margin: 0 0 0 0;
+}
