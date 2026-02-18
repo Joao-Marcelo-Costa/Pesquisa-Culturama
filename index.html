@@ -114,8 +114,8 @@
 
             <fieldset>
                 <legend>Hábitos</legend>
-                    <p>Redes sociais</p>
-                <input id="instagram" type="checkbox" name="social" value="instagram">
+                    <p>Redes sociais</p> 
+                <input id="instagram" type="checkbox" name="social" value="instagram"><!--basicamente cada caixinha dessas funciona como uma unica pergunta separada, não como várias caixinhas-->
                 <label for="instagram">Instagram</label>
                 <br>
                 <input id="Facebook" type="checkbox" name="social" value="Facebook">
@@ -125,9 +125,24 @@
                 <label id=""for="social">Yotube</label>
                 <br>
                 <input type="checkbox" name="social" value="GitHub">
-                <label for="social">GitHub</label>
-            </fieldset>
+                <label for="social" >GitHub</label>
+                <br>
 
+                <label for="MusicStyle">Estilo Musical</label>
+                <input name="Music" id="MusicStyle" list = "styletypes"></input>
+
+                <datalist id="styletypes">
+                    <option value="Rock"></option>
+                    <option value="Pop"></option>
+                    <option value="Samba"></option>
+                    <option value="Sertanejo"></option>
+                    <option value="Rap"></option>
+
+
+                </datalist>
+
+            </fieldset>
+            
             <button type="submit">Enviar</button>
             
         </form>
