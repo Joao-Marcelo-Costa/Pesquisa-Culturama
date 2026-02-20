@@ -42,8 +42,37 @@ fieldset{
     border-radius: 5px;
 }   
 
+label{
+    display: inline-block;
+    margin: 5px;
+}
+
 legend{
     font-weight: 800;
     font-size: 18px;
     padding: 0 5px;
 }
+
+input, select, textarea{
+    width: 100%;
+    padding: 10px 0;
+    margin-bottom: 20px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+
+}
+
+textarea{
+    min-height: 100px;
+}
+
+input[type="radio"],
+input[type="checkbox"]{
+    width: auto;
+}
+
+input[type="color"]{
+    width: 40px;
+    padding: 0 5px;
+}
+
