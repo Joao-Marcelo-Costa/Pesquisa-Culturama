@@ -33,27 +33,27 @@
                     <legend>Dados Pessoais</legend>
                     <!--name selection-->
                         <label for="Name">Nome</label>
-                        <input id="Name" name="UserName" required>
+                        <input type = "text" id="Name" name="UserName" required>
                         <br>
                     <!--age selection-->
                         <label for="Age">Idade</label>
-                        <input id="Age" name="UserAge" min="12" max="100" required>
+                        <input type = "number" id="Age" name="UserAge" min="12" max="100" required>
                         <br>
                     <!--BirthDate selection-->
                         <label for="Date">Data de nascimento</label>
-                        <input id="Date" name="BirthDate" required>
+                        <input type = "date" id="Date" name="BirthDate" required>
                         <br>
                     <!--Email selection-->
                         <label for="Email">E-mail</label>
-                        <input id="Email" name="UserEmail" required>
+                        <input type = "email" id="Email" name="UserEmail" required>
                         <br>
                     <!--Phone number selection-->
                         <label for="Phone">Número de telefone</label>
-                        <input id="Phone" name="UserPhoneNumber" required placeholder="DDD + numero sem espaços" pattern="[0-9]{11}">
+                        <input type="number" id="Phone" name="UserPhoneNumber" required placeholder="DDD + numero sem espaços" pattern="[0-9]{11}">
                         <br>
                     <!--Image upload selection-->
                         <label for="Image">Upload de foto</label>
-                        <input id="Image" name="UserImage" accept="image/*">
+                        <input type="file" id="Image" name="UserImage" accept="image/*">
                         <br> 
                 </fieldset>
 
