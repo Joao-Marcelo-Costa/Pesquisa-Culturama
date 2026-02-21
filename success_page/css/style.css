@@ -16,6 +16,24 @@
   font-style: oblique;
 }
 
+img{
+    width: 100px;
+}
+
 body{
     font-family:"Work Sans", sans-serif;
+    text-align: center;
 }
+
+section{
+    background-color: #f9f9f9;
+    text-align: center;
+    width: 500px;
+    margin-top:  350px;
+    margin-left: 700px;
+    border-radius: 30px;
+    padding: 20px;
+    border: 1px solid #cccccc;
+  
+}
+
