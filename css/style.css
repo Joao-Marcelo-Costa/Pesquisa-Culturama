@@ -76,3 +76,7 @@ input[type="color"]{
     padding: 0 5px;
 }
 
+/* changes input color when its invalid */
+input[type="text"]:invalid{
+    border-color:red;
+}
