@@ -1,0 +1,39 @@
+*{
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+}
+/* defining fonts */
+.fjalla-one-regular {
+  font-family: "Fjalla One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.work-sans {
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: oblique;
+}
+
+img{
+    width: 100px;
+}
+
+body{
+    font-family:"Work Sans", sans-serif;
+    text-align: center;
+}
+
+section{
+    background-color: #f9f9f9;
+    text-align: center;
+    width: 500px;
+    margin-top:  350px;
+    margin-left: 700px;
+    border-radius: 30px;
+    padding: 20px;
+    border: 1px solid #cccccc;
+  
+}
+
