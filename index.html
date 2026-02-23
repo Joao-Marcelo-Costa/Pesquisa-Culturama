@@ -49,11 +49,13 @@
                         <br>
                     <!--Phone number selection-->
                         <label for="Phone">Número de telefone</label>
-                        <input type="number" id="Phone" name="UserPhoneNumber" required placeholder="DDD + numero sem espaços" pattern="[0-9]{11}">
+                        <input type="tel" id="Phone" name="UserPhoneNumber" aria-describedby="" required placeholder="DDD + numero sem espaços" pattern="[0-9]{11}">
+                        <small id="PhoneHelp">fill with eleven digits in the format, DDD + number without spaces or hifen</small>
                         <br>
                     <!--Image upload selection-->
                         <label for="Image">Upload de foto</label>
-                        <input type="file" id="Image" name="UserImage" accept="image/*">
+                        <input type="file" id="Image" name="UserImage" accept="image/*" aria-describedby="ImageHelp">
+                        <small id="ImageHelp">send a photo on png or jpeg format</small>
                         <br> 
                 </fieldset>
 
@@ -204,8 +206,8 @@
 
 
                 
-                <button type="submit">Enviar</button>
-                <button type="reset">Limpar</button>
+                <button type="submit" aria-label="Sent formulary data">Enviar</button>
+                <button type="reset" aria-label="Clean formulary data">Limpar</button>
                 
             </form>
         </section>
